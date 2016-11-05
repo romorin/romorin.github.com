@@ -4,14 +4,14 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">{{ page.title }}</h1>
-
-	<h3>
-		{{ page.types | array_to_sentence_string}}
-	</h3>
-	<h3>
-		{{ page.techs | array_to_sentence_string}}
-	</h3>
+  <h1 class="page-heading">{{ page.title }}
+  	<small>
+  		{{ page.types | array_to_sentence_string}}
+  	</small>
+  	<small>
+  		{{ page.techs | array_to_sentence_string}}
+  	</small>
+  </h1>
 
   {{ content }}
 

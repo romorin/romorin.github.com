@@ -9,10 +9,10 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <div class="site-nav collapse navbar-collapse" id="navbar-portfolio">
+    <div class="site-nav collapse navbar-collapse">
       <!-- inner links -->
       {% if layout.sections %}
-        <ul role="tablist">
+        <ul id="header-inner-links" role="tablist">
           {% for section in layout.sections %}
             <li><a href="{{ section.href }}">{{ section.title }}</a></li>
           {% endfor %}

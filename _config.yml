@@ -34,5 +34,6 @@ exclude:
 
 # Collections
 collections:
-  projects:
-    output: true
+  - projects
+  - techs_cat
+  - techs

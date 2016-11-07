@@ -3,13 +3,43 @@ layout: default
 sections:
   - href: "#home"
     title: home
-  - href: "#details"
-    title: details
+  - href: "#techs"
+    title: techs
   - href: "#extra"
     title: extra
+author: html
 ---
 
 <div class="home">
+  <section id="techs">
+    {% assign sorted = site.techs_cat | sort: 'order' %}
+    {% for category in sorted %}
+      <div>
+        {% for name in category.techs %}
+          {% assign tech = site.data.techs[name] %}
+          {% if tech.icon %}
+            <a href="{{ tech.link }}">
+              <span class="tech-icon {{ tech.icon }}" title="{{ tech.alt }}"></span>
+            </a>
+          {% elsif tech.url %}
+            <a href="{{ tech.link }}">
+              <img src="{{ tech.url }}" title="{{ tech.alt }}" alt="{{ tech.alt }}" height="50" />
+            </a>
+          {% elsif tech.base64 %}
+            <a href="{{ tech.link }}">
+              <img {% if tech.class %} class="{{tech.class}}" {% endif %} title="{{ tech.alt }}" height="50" alt="{{ tech.alt }}" src="{{tech.base64}}" />
+            </a>
+          {% elsif tech.text %}
+            <a href="{{ tech.link }}">
+              <span title="{{ tech.alt }}">{{ tech.text }}</span>
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <hr/>
+      {{ category.output }}
+    {% endfor %}
+  </section>
 
   <h1 class="page-heading">Postings</h1>
 

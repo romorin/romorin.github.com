@@ -1,0 +1,13 @@
+---
+layout: project
+title: Twitch viewer
+types: [freeCodeCamp,frontend]
+techs: [html,css,javascript,jquery,svg]
+screenshots: [twitch-screenshot-t.png]
+github: https://github.com/romorin/fcc-twitch
+codepen: http://codepen.io/romorin/pen/zBEqzq/
+live: http://romorin.com/twitch/
+---
+
+Another freeCodeCamp project, to display a list of twitch streamers. Notable for experimeting with svg to create a crossair around a stream while hovering the cursor on it.
+I also tried to reuse as much as possible from the last freeCodeCamp project, the wikipedia viewer. 

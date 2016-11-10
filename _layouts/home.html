@@ -2,11 +2,11 @@
 layout: default
 sections:
   - href: "#home"
-    title: home
+    title: Home
   - href: "#techs"
-    title: techs
-  - href: "#extra"
-    title: extra
+    title: Techs
+  - href: "#projects"
+    title: Projects
 author: html
 ---
 
@@ -41,22 +41,35 @@ author: html
     {% endfor %}
   </section>
 
-  <h1 class="page-heading">Postings</h1>
+<!-- todo add icons without duplication with tech (include?) -->
+  <section id="projects">
+    {% for project in site.projects %}
+      <figure class="project">
+        <img class="img-responsive" src="/assets/projects/{{ project.screenshots[0] }}" alt="{{ project.title }}" />
+        <div class="is-hidden blurry"></div>
+        <figcaption class="is-hidden">
+          <p>{{ project.title }}</p>
+          <p>{{ project.types | array_to_sentence_string}}</p>
+          <p>{{ project.techs | array_to_sentence_string}}</p>
+          <p>
+            {% if project.github %}
+              <a href="{{ project.github }}" ><span class="icon fa fa-github"></span>G</a>
+            {% endif %}
+            {% if project.codepen %}
+              <a href="{{ project.codepen }}" ><span class="icon fa fa-codepen"></span>C</a>
+            {% endif %}
+            {% if project.live %}
+              <a href="{{ project.live }}" ><span class="icon fa fa-globe"></span>W</a>
+            {% endif %}
+            {% if project.heroku %}
+              <a href="{{ project.keroku }}" ><span class="icon fa fa-globe"></span>W</a>
+            {% endif %}
+          </p>
+        </figcaption>
+      </figure>
+    {% endfor %}
+  </section>
 
   {{ content }}
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
 </div>

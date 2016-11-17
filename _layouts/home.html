@@ -15,26 +15,7 @@ author: html
     {% assign sorted = site.techs_cat | sort: 'order' %}
     {% for category in sorted %}
       <div>
-        {% for name in category.techs %}
-          {% assign tech = site.data.techs[name] %}
-          {% if tech.icon %}
-            <a href="{{ tech.link }}">
-              <span class="tech-icon {{ tech.icon }}" title="{{ tech.alt }}"></span>
-            </a>
-          {% elsif tech.url %}
-            <a href="{{ tech.link }}">
-              <img src="{{ tech.url }}" title="{{ tech.alt }}" alt="{{ tech.alt }}" height="50" />
-            </a>
-          {% elsif tech.base64 %}
-            <a href="{{ tech.link }}">
-              <img {% if tech.class %} class="{{tech.class}}" {% endif %} title="{{ tech.alt }}" height="50" alt="{{ tech.alt }}" src="{{tech.base64}}" />
-            </a>
-          {% elsif tech.text %}
-            <a href="{{ tech.link }}">
-              <span title="{{ tech.alt }}">{{ tech.text }}</span>
-            </a>
-          {% endif %}
-        {% endfor %}
+        {% for name in category.techs %} {% assign tech = site.data.techs[name] %} {% include tech-icon-link.html tech=tech %} {% endfor %}
       </div>
       <hr/>
       {{ category.output }}
@@ -45,25 +26,22 @@ author: html
   <section id="projects">
     {% for project in site.projects %}
       <figure class="project">
-        <img class="img-responsive" src="/assets/projects/{{ project.screenshots[0] }}" alt="{{ project.title }}" />
+        {% if project.screenshots and project.screenshots.size > 0 %}
+          <img class="img-responsive" src="/assets/projects/{{ project.screenshots[0] }}" alt="{{ project.title }}" />
+        {% else %}
+          <img class="img-responsive" src="/assets/projects/{{ project.screenshots[0] }}" alt="{{ project.title }}" />
+        {% endif %}
         <div class="is-hidden blurry"></div>
         <figcaption class="is-hidden">
           <p>{{ project.title }}</p>
           <p>{{ project.types | array_to_sentence_string}}</p>
           <p>{{ project.techs | array_to_sentence_string}}</p>
           <p>
-            {% if project.github %}
-              <a href="{{ project.github }}" ><span class="icon fa fa-github"></span>G</a>
-            {% endif %}
-            {% if project.codepen %}
-              <a href="{{ project.codepen }}" ><span class="icon fa fa-codepen"></span>C</a>
-            {% endif %}
-            {% if project.live %}
-              <a href="{{ project.live }}" ><span class="icon fa fa-globe"></span>W</a>
-            {% endif %}
-            {% if project.heroku %}
-              <a href="{{ project.keroku }}" ><span class="icon fa fa-globe"></span>W</a>
-            {% endif %}
+            {% assign tech = site.data.techs | map: 'github' %} {{tech.alt}}
+            {% if project.github %} {% assign key='github' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=project.github %} {% endif %}
+            {% if project.codepen %} {% assign key='codepen' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=project.codepen %} {% endif %}
+            {% if project.live %} {% assign key='web' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=project.live %} {% endif %}
+            {% if project.heroku %} {% assign key='heroku' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=project.heroku %} {% endif %}
           </p>
         </figcaption>
       </figure>

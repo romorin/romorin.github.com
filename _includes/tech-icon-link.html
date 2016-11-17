@@ -1,0 +1,13 @@
+<!-- Add icon link from tech -->
+{% assign tech = include.tech %}
+{% if include.link %}
+  <a href="{{ include.link }}">
+    {% include tech-icon.html tech=tech %}
+  </a>
+{% elsif tech.link %}
+  <a href="{{ tech.link }}">
+    {% include tech-icon.html tech=tech %}
+  </a>
+{% else %}
+  {% include tech-icon.html tech=tech %}
+{% endif %}

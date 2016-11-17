@@ -3,7 +3,7 @@ layout: project
 title: Radiosh
 types: [general,cli]
 techs: [bash,makefile]
-screenshots: [twitch-screenshot-t.png]
+screenshots: [radiosh-screenshot-t.png]
 github: https://github.com/romorin/radiosh
 ---
 

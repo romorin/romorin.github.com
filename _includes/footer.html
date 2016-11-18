@@ -1,3 +1,28 @@
+{% assign used_tech = "" | split: ' '  %}
+{% if layout.techs %}
+  {% for tech in layout.techs %}
+    {% assign results = used_tech | where: "alt", tech.alt %}
+    {% if results | size == 0 %}
+      {% assign used_tech = used_tech | push: site.data.techs[tech]  %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% if layout.techs_cat %}
+  {% for catname in layout.techs_cat %}
+    {% for cat in site.techs_cat %}
+      {% assign down = cat.title | downcase %}
+      {% if down == catname %}
+        {% for tech in cat.techs %}
+          {% assign results = used_tech | where: "alt", tech.alt %}
+          {% if results | size == 0 %}
+            {% assign used_tech = used_tech | push: site.data.techs[tech]  %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+{% endif %}
+
 <footer class="site-footer">
 
   <div class="wrapper">
@@ -7,8 +32,8 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>
             {% if site.author %}
+          <li>
               {{ site.author | escape }}
             {% else %}
               {{ site.title | escape }}
@@ -30,5 +55,8 @@
     </div>
 
   </div>
+  {% if site.data.credits.icons8.same-page == true %}{% assign techs = used_tech | where: 'credits', 'icons8'%} {% include credits/icons8.html techs=techs %}{% endif %}
+  {% if site.data.credits.cc-by-2-logo.same-page == true %}{% assign techs = used_tech | where: 'credits', 'cc-by-2-logo' %} {% include credits/cc-by-2-logo.html techs=techs %}{% endif %}
+  {% if site.data.credits.trademark-not-affiliated.same-page == true %}{% assign techs = used_tech | where: 'credits', 'trademark-not-affiliated' %} {% include credits/trademark-not-affiliated.html techs=techs %}{% endif %}
 
 </footer>

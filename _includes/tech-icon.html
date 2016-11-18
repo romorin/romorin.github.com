@@ -8,9 +8,6 @@
 {% elsif tech.text %}
   <span title="{{ tech.alt }}">{{ tech.text }}</span>
 {% endif %}
-{% if tech.credits %}
-  {% assign credits = site.data.credits[tech.credits] %}
-  {% if credits.trademark %}
-    <span class="exponent">&#0153;</span>
-  {% endif %}
+{% if tech.trademark %}
+  <span class="exponent">&#0153;</span>
 {% endif %}

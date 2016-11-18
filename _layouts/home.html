@@ -13,13 +13,17 @@ techs: [github,codepen,web,heroku]
 
 <div class="home">
   <section id="techs">
-    {% assign sorted = site.techs_cat | sort: 'order' %}
-    {% for category in sorted %}
-      <div>
-        {% for name in category.techs %} {% assign tech = site.data.techs[name] %} {% include tech-icon-link.html tech=tech %} {% endfor %}
-      </div>
-      <hr/>
-      {{ category.output }}
+    {% for catname in layout.techs_cat %}
+      {% for category in site.techs_cat %}
+        {% assign down = category.title | downcase %}
+        {% if down == catname %}
+          <div>
+            {% for name in category.techs %} {% assign tech = site.data.techs[name] %} {% include tech-icon-link.html tech=tech %} {% endfor %}
+          </div>
+          <hr/>
+          {{ category.output }}
+        {% endif %}
+      {% endfor %}
     {% endfor %}
   </section>
 

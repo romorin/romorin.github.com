@@ -1,5 +1,4 @@
 ---
-order: 0
 techs: [html,css,javascript,jquery,typescript,angular2,jekyll]
 ---
 

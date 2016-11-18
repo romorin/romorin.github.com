@@ -40,6 +40,7 @@ jquery:
   credits: trademark-not-affiliated
   author: JS Foundation
   author-url: https://js.foundation/
+  trademark: true
   url: assets/logos/jquery-logo.png
   alt: JQuery
   link: http://jquery.com/

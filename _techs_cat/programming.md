@@ -1,5 +1,4 @@
 ---
-order: 1
 techs: [git,markdown,bash,python,java,sql,xml]
 ---
 

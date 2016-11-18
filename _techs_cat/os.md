@@ -1,5 +1,4 @@
 ---
-order: 2
 techs: [windows,freebsd,linux,debian,ubuntu,gentoo]
 ---
 

@@ -1,4 +1,4 @@
-{{% assign size = include.techs | size  %}
+{% assign size = include.techs | size  %}
 {% if size > 0 %}<p>
   {{ include.techs | map: 'alt' | array_to_sentence_string }} icons are from the <a href="https://icons8.com">Icon pack by Icons8</a>
 </p>{% endif %}

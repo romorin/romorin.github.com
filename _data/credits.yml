@@ -1,12 +1,6 @@
 cc-by-2-logo:
-  trademark: false
   same-page: false
 icons8:
-  trademark: false
   same-page: true
-js-foundation:
-  trademark: true
-  same-page: false
-gentoo:
-  trademark: false
+trademark-not-affiliated:
   same-page: false

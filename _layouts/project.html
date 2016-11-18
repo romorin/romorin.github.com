@@ -1,36 +1,32 @@
 ---
 layout: default
+techs: [github,codepen,web,heroku]
 ---
 
 <div class="home">
 
   <h1 class="page-heading">{{ page.title }}
-  	<small>
-  		{{ page.types | array_to_sentence_string}}
-  	</small>
-  	<small>
-  		{{ page.techs | array_to_sentence_string}}
-  	</small>
+    <small>
+      {{ page.types | array_to_sentence_string}}
+    </small>
+    <small>
+      {{ page.techs | array_to_sentence_string}}
+    </small>
   </h1>
 
   {{ content }}
 
   <p>
-		{% if page.github %}
-			<a href="{{ page.github }}" ><span class="icon fa fa-github"></span>G</a>
-		{% endif %}
-		{% if page.codepen %}
-			<a href="{{ page.codepen }}" ><span class="icon fa fa-codepen"></span>C</a>
-		{% endif %}
-		{% if page.live %}
-			<a href="{{ page.live }}" ><span class="icon fa fa-globe"></span>W</a>
-		{% endif %}
-	</p>
+    {% if page.github %} {% assign key='github' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.github %} {% endif %}
+    {% if page.codepen %} {% assign key='codepen' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.codepen %} {% endif %}
+    {% if page.live %} {% assign key='web' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.live %} {% endif %}
+    {% if page.heroku %} {% assign key='heroku' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.heroku %} {% endif %}
+  </p>
 
-	{% if page.screenshots %}
-		{% for screenshot in page.screenshots %}
-			<img class="img-responsive" src="/assets/projects/{{ screenshot }}" alt="{{ page.title }} screenshot" />
-		{% endfor %}
-	{% endif %}
+  {% if page.screenshots %}
+    {% for screenshot in page.screenshots %}
+      <img class="img-responsive" src="/assets/projects/{{ screenshot }}" alt="{{ page.title }} screenshot" />
+    {% endfor %}
+  {% endif %}
 
 </div>

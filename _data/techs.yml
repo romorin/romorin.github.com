@@ -5,7 +5,7 @@
 # Web
 ######################
 angular2:
-  url: assets/logos/angular_solidBlack.svg
+  url: assets/logos/angular.svg
   alt: Angularjs 2
   link: https://angular.io/
 codepen:

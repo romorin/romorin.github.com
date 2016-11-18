@@ -1,6 +1,9 @@
 cc-by-2-logo:
   same-page: false
+  render: cc-by-2-logo
 icons8:
   same-page: true
+  render: icons8
 trademark-not-affiliated:
   same-page: false
+  render: trademark-not-affiliated

@@ -55,8 +55,12 @@
     </div>
 
   </div>
-  {% if site.data.credits.icons8.same-page == true %}{% assign techs = used_tech | where: 'credits', 'icons8'%} {% include credits/icons8.html techs=techs %}{% endif %}
-  {% if site.data.credits.cc-by-2-logo.same-page == true %}{% assign techs = used_tech | where: 'credits', 'cc-by-2-logo' %} {% include credits/cc-by-2-logo.html techs=techs %}{% endif %}
-  {% if site.data.credits.trademark-not-affiliated.same-page == true %}{% assign techs = used_tech | where: 'credits', 'trademark-not-affiliated' %} {% include credits/trademark-not-affiliated.html techs=techs %}{% endif %}
-
+  {% for credit in site.data.credits %}
+    {% if credit[1].same-page == true %}
+      {% assign render = credit[1].render %}
+      {% assign render-url = 'credits/' | append: {{render}} | append: '.html' %}
+      {% assign techs = used_tech | where: 'credits', credit[0] %}
+      {% include {{render-url}} techs=techs %}
+    {% endif %}
+  {% endfor %}
 </footer>

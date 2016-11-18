@@ -1,0 +1,12 @@
+---
+layout: default
+title: Credits
+permalink: /credits/
+---
+
+<!-- todo: find way to loop over includes -->
+{% assign techs = site.data.techs | where: 'credits', 'icons8' %} {% include credits/icons8.html techs=techs %}
+{% assign techs = site.data.techs | where: 'credits', 'cc-by-2-logo' %} {% include credits/cc-by-2-logo.html techs=techs %}
+{% assign techs = site.data.techs | where: 'credits', 'trademark-not-affiliated' %} {% include credits/trademark-not-affiliated.html techs=techs %}
+
+https://angular.io/presskit.html

@@ -1,0 +1,16 @@
+cc-by-2-logo:
+  trademark: false
+  same-page: false
+  layout: site.include.credits.cc-by-2-logo.html
+icons8:
+  trademark: false
+  same-page: true
+  layout: site.include.credits.icon8.html
+js-foundation:
+  trademark: true
+  same-page: false
+  layout: site.include.credits.js-foundation.html
+gentoo:
+  trademark: false
+  same-page: false
+  layout: site.include.credits.gentoo.html

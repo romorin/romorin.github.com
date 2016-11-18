@@ -38,3 +38,4 @@ collections:
     output: true
   ? techs_cat
   ? techs
+  ? credits

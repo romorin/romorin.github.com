@@ -1,4 +1,3 @@
-<!-- Add icon from tech -->
 {% assign tech = include.tech %}
 {% if tech.icon %}
   <span class="tech-icon {{ tech.icon }}" title="{{ tech.alt }}"></span>
@@ -8,4 +7,10 @@
   <img {% if tech.class %} class="{{tech.class}}" {% endif %} title="{{ tech.alt }}" height="50" alt="{{ tech.alt }}" src="{{tech.base64}}" />
 {% elsif tech.text %}
   <span title="{{ tech.alt }}">{{ tech.text }}</span>
+{% endif %}
+{% if tech.credits %}
+  {% assign credits = site.data.credits[tech.credits] %}
+  {% if credits.trademark %}
+    <span class="exponent">&#0153;</span>
+  {% endif %}
 {% endif %}

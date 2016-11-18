@@ -31,10 +31,18 @@ javascript:
   alt: Javascript
   link: https://developer.mozilla.org/en-US/docs/Web/javascript
 jekyll:
-  credits: jekyll
+  credits: cc-by-2-logo
+  author: Jekyll
   url: assets/logos/jekyll-logo-black.svg
   alt: Jekyll
   link: https://jekyllrb.com/
+jquery:
+  credits: trademark-not-affiliated
+  author: JS Foundation
+  author-url: https://js.foundation/
+  url: assets/logos/jquery-logo.png
+  alt: JQuery
+  link: http://jquery.com/
 markdown:
   credits: icons8
   class: icon icons8-Markdown
@@ -43,7 +51,7 @@ markdown:
   link: http://daringfireball.net/projects/markdown/
 #todo
 nginx:
-  alt: nginx
+  alt: Nginx
 typescript:
   url: assets/logos/ts.svg
   alt: Typescript
@@ -53,10 +61,7 @@ web:
   alt: Web
 
 # todo licensing
-#jquery:
-#  url: assets/logos/jquery-icon.png
-#  alt: jquery
-#  link: http://jquery.com/
+
 #bootstrap:
 #  url: assets/logos/Boostrap_logo.png
 #  alt: bootstrap
@@ -68,7 +73,7 @@ web:
 
 bash:
   text: "#!"
-  alt: bash
+  alt: Bash
   link: https://www.gnu.org/software/bash/
 cpp:
   credits: icons8
@@ -96,13 +101,13 @@ java:
   credits: icons8
   class: icon icons8-Java-Coffee-Cup-Logo
   base64: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAADWklEQVRogd1Zi3XjIBCcElwCJagD08G5g6iDcwdWB5cOrA7sDqwO4g7sDpwOcpoTPK0QSLKFPr55b99LAoEZYJddBMyPTWlqgXknxX5pArHxWJpATCSl/ZSmF+YRDSf8R4I0KjG0ZFkq40EB9B0r6K3hiskXZTMSKZpiaGpBPqPwG00hNN8dxB38KO1PabvZ2D2JI9pizqKdGcOhtJtp+8ZKIx+JXtAWczVtBIXIY3gWbasCSX0hLEZ52j+XIDoUfTvjiknnpzgcGdpi6BdWzCfeSAzhhmaKSQLtxdzknoVGd3h221cbmi002n4jkSEsdpWgn3RFrp3TfpmV3YsoEBbkCn6L8kGjJnvztGd4w12Sodl1fO7SHU1Rq6+JSJoBIbQDGm8WHAgpSnvaC9SCsrlIjYUV5dulDG90H0lYUdr5ew7/XbUYVGm/UJUArHm4Czn8q01Re+d3pkAyYfWBxR5fh77M+JPs5A7tbNq3A13IUR25LjEbM5ebzEYNIArti5HGknnbQ1ASTUx/GnfhYMbgQvmKPPsoSYv62qpQZc8+UTEs75j7LPrpiJr+ieLEMYRxjALVserzj8kESSSGSCaMExfGMsf2hswrhJhGWUGTvjtwcEa5vog1BhrhkiQqFJoVKN/fhoqyb3AMy13HjePJ3dGvUR2GPfy+QQIXY0fxM833GkSjMOWZ4yj6pFMJkcgwPkDcUQUGN+s+ivZZ0yN5CRZolwcuefbJUa24r3TgeCfTL52Icy9Igj4UYyUVFn5BJQEbHOgjoYKNJJkdULj9gnfCCp9/c4SPWCgISONizF5CMLO2+ZY15mDWf8YEhQLd4XiDiLuo0F7lO6roRhKJ6MegcMUwATkqhx9ClPM8EOkDmStm6E2tUKc5tDEPIdbfopQOd7TP+1yvNAq1mJ9Y86bwHxteevSr2BFKoU6J5HxpzEno9HeEfeJmCByMUeh2gH2gWdy5Xy66AgYFjl5MDiLrkqmMfupLhYBmFhEVGpWT5uhPd0JmCzyOkZkxQ6tuPy4/zP+peFL6wZXVAXvWsXl86a/2OHL31HiKftiKlakMfSJGgNiiTo2kT90xY6K6MZPlZmKbSchAETLb1xcQvhF+65sVFKhRvyUUxkJZxBVNX6IANYbAX/cK+NSHozdQAAAAAElFTkSuQmCC
-  alt: java
+  alt: Java
   link: https://www.java.com/en/
 python:
   credits: icons8
   class: icon icons8-Python
   base64: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAACMUlEQVRoge2Z+3WCMBTG7wiOwAiOwAbtBmYEN9AR3MBsUDeQDdoNyAa6geWWpOcSHuYFN7R+53z/RBK/H3kQAsBL/0dF47fGh8bnxlftuvFD+1OXHfS1G46gz7SDNugjwDdo4bIBw54IAbGNN6RYNnpfAtLAUChWXaAbSGnHQO0XzN8TneyClAsIB6qWCD4m2jO2FIQB3WbOPKmpsU97z9dsoiEEKRcQDpMNELqGuJ7JDiiV2fTngHzlCzT2+0fj98VSTygVkPHZ9Y9xo7iD9k6kmOShQ87l2tMzmJIJIhTooTMP6p0ZJBRIDsHgMLtlABMCNLhdkhmAoFUAELq0gXLpnYvOs/Gs13ntKDMAMRY6k+98lhRonwEI7R0A/ylQQUTlOYyBzEFJGVC/szBUTBAK2l4RJEvMavur0CMoYwlp9lbbCJgOUMwd3iYAwQPHc0QOM2SjgO7QPRzcAd/erwf0FdBAqesi1JUJglpSoCqicg4w6M6DVXpWNguAyADEHjE/8n2wmrljn5xy+Q6WSs8GjOoMYNDSBgJN6QvEDWJ6Z/BTjFwp0OgDvVwZkAKHh/opcyCEMHs/5y9+cgYgduG4nFqSjVYD5Kq5hhabXkCWFQx/6WNTDIwg7QhYOZAaaEvBioGefZNlUwXhUIK0I0i5WiD3qGLP82ro79gvwKyQ13fXnmNRAemg5KLJJ4QbxSP4vVNR4w0RC2d2EoLhPvAI7YJBe07pMrTU1+C1ReoQ3xemvYtHHZL2AAAAAElFTkSuQmCC
-  alt: python
+  alt: Python
   link: https://www.python.org/
 sql:
   icon: fa fa-database
@@ -127,7 +132,7 @@ xml:
 
 android:
   icon: fa fa-android
-  alt: android
+  alt: Android
   link: https://developer.android.com/index.html
 debian:
   credits: icons8
@@ -149,14 +154,16 @@ linux:
   link: https://en.wikipedia.org/wiki/Linux
 # todo licensing
 gentoo:
-  text: G
-  alt: gentoo
+  credits: trademark-not-affiliated
+  author: Gentoo Foundation, Inc
+  url: assets/logos/gentoo-signet.svg
+  alt: Gentoo
   link: https://www.gentoo.org/
 opensuse:
   credits: icons8
   class: icon icons8-SUSE
   base64: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAADHUlEQVRoge1YjbGbMAzWCBmBEbJBvEGzQdngZYOyQbNB2OC9DfAG6QawQd8GqfUiFeHIPyGBXK/+7r4LGFnosy3LBKCgoKCgoKCg4BWoHN8cT46d40VhT8/eHX84fnfcKn6qFeJVgS/GwDBQTUAuf8N1IL45NqKtI//YvllayOlBETFxoWdnuM7q08Sho58LCYnxl+Peced4cLTPEGXg8aU1l4Z+j46tY03Xs/H2IiFydvAaVwcuuy3dz5qlpXIlxk/vvnIc6PoDxhmr/wUxSNwYcBYs3WMcG2pDcWchLhv1i8QwTyTAUOAXIeRCYk2umAri2+ea7GCsQ4bIM5UtqFUc4yg1gnZlYT1ciyzyndqyBFWeI9xl/OOJtF1bGMeUJQZxEB1xt+GtEUemh+lo8bM2I4AhYYPPGxhn32dLsYUGNwgrXsLF6xgI4ixEWeV57fmuYDyr+VzsrCYDM/Qivj9QG/5yrWipn/ECjFXyLdzWmsVgYSqIq3Lv2RlhVwX6xiD7X2DGUspFC7dLhkcTd5cOxmC5ne9l/nFbDDXkzehD4HMT5wi3ySVyoHbeJIzoj9cW8nehPdlj3Vslj070ogrGwgagL7lHIH0/HX7S4kzgiXtHxGs+Sdx1nloKGDDWkZ3CjbAZIF1f/GViYCqeqSW9gbH6+8xefiYRpExOdNpQ4NLmk9r9l9YJ39s7bHEFVDmC5IlVo4305UNhCKkDrVFsB5ieCOTgtTmC5CjHgkPgF2IH+nJpYPxnBmA68wfFXkLa7iMx2oSfL3CyY6Kn1ik71hLfiueIKhGkhBG2Wr7dJSh0LmORMpiYY18Qws81SSzKPIAmYpe7/P+CE916lMk4VxD6biGcEzzTUtCgxMJ86DikHVvuFRQCf0KzHyP6NnOCzUENYUFnxb6HfEEtTAXxgRd5mhfuCMyhTqHc/RhyuZyFrRTDgrYBv7JMtML34PnwmQ2bcFQLWwO33y1cVHmJDsI25tcvE9o3kTaoSeAu9gG3CXgE/XDI/7bUMH7wyaDkfaP45T9XtBKxoXgaj4t9GxUUFBQUFBT8T/gDCRL+m6U8zPEAAAAASUVORK5CYII=
-  alt: opensuse
+  alt: Opensuse
   link: http://127.0.0.1/
 ubuntu:
   credits: icons8

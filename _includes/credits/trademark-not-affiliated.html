@@ -1,0 +1,4 @@
+{% for tech in include.techs %}<p>
+  <a href="{{tech.url}}">{{tech.alt}}</a> icon is a trademark of the <a href="{% if tech.author-url %} {{tech.author-url}} {% else %} {{tech.link}} {% endif %}">{{tech.author}}</a>,
+  this website is not affiliated in any way to the {{tech.author}}.
+</p>{% endfor %}

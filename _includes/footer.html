@@ -32,16 +32,23 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-            {% if site.author %}
-          <li>
-              {{ site.author | escape }}
-            {% else %}
+          <li>{% if site.author %}
+            {{ site.author | escape }}
+          {% else %}
               {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
+          {% endif %}</li>
+          {% if site.email %}
             <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
+          {% endif %}
+          {% if site.github %}
+            <li><a href="{{ site.github }}">{{ site.github }}</a></li>
+          {% endif %}
+          {% if site.codepen %}
+            <li><a href="{{ site.codepen }}">{{ site.codepen }}</a></li>
+          {% endif %}
+          {% if site.freeCodeCamp %}
+            <li><a href="{{ site.freeCodeCamp }}">{{ site.freeCodeCamp }}</a></li>
+          {% endif %}
         </ul>
       </div>
 

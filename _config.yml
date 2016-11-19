@@ -15,6 +15,9 @@
 # in the templates via {{ site.myvariable }}.
 title: Home of Robert Morin
 email: romorin@zoho.com
+github: https://github.com/romorin
+codepen: http://codepen.io/romorin/
+freeCodeCamp: http://www.freecodecamp.com/romorin
 description: >
   Robert Morin, programmer. See my works and skills, and learn how to see me
   around the web.

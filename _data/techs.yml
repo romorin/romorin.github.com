@@ -5,9 +5,17 @@
 # Web
 ######################
 angular2:
+  credits: cc-by-4-logo
+  author: Angular
   url: assets/logos/angular.svg
   alt: Angularjs 2
   link: https://angular.io/
+bootstrap:
+  credits: cc-by-3-logo
+  author: bootstrap
+  url: assets/logos/bootstrap-solid.svg
+  alt: bootstrap
+  link: http://getbootstrap.com/
 codepen:
   icon: fa fa-codepen
   alt: Codepen
@@ -61,13 +69,6 @@ web:
   icon: icon fa fa-globe
   alt: Web
 
-# todo licensing
-
-#bootstrap:
-#  url: assets/logos/Boostrap_logo.png
-#  alt: bootstrap
-#  link: http://getbootstrap.com/
-
 ######################
 # Programming
 ######################
@@ -120,12 +121,13 @@ xml:
   base64: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAABTUlEQVRoge2XgY3CMAxF/wiMwAiMkBEYISMwQka4EToCG5ANuA3oBrDBXa2zFRcONUgV96Xzk6w2qWn92tSiQBAEr5KnuE7xRRpXrXERZgkvs4gls9JdX4i8iRBhI0TYCBE2QoSNEGEjRJ5x0LxBx1XHW3fs8kt+1XG6G/eyusgGrVjb/9RjxZ1no3MD5t8SCSQiwlFzi26zzttYYq9z57tzJxCJ7F2+v/sfbq6gPbEKUhHhhvm7ItQpRt1KJM0xQYBMZOvyj26+aljhBT9iRcc7kIlYJxrROpZQNTJasQOaSAKZiLzAsrQy2p0XpDNVzJ9YBqnIDm1J+VZs57ACR7SnVfAoItInjbxifd2Jtv7t4taKrZPZO1Pcfna/Se5avsOtVd//+4vyV4QIGyHCRoiwESJshAgbIcJGd332Dc4ctx6RTC5jX6RBELzAN9U5roN/OIH3AAAAAElFTkSuQmCC
   alt: XML
   link: https://www.w3.org/XML/
-
-# todo licensing
-#lua:
-#  url: assets/logos/lua-logo.gif
-#  alt: lua
-#  link: http://www.lua.org/
+lua:
+  credits: generic
+  credits-text: Copyright © 1998 Lua.org. Graphic design by Alexandre Nakonechnyj.
+  author:  Lua.org
+  url: assets/logos/lua-logo.gif
+  alt: Lua
+  link: http://www.lua.org/
 
 ######################
 # OS

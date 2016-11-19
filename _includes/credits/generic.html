@@ -1,0 +1,3 @@
+{% for tech in include.techs %}<p>
+  <a href="{{tech.url}}">{{tech.alt}} logo</a> by <a href="{{tech.link}}">{{tech.author}}</a> : {{tech.credits-text}}</a>
+</p>{% endfor %}

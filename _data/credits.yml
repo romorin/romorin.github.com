@@ -1,6 +1,24 @@
 cc-by-2-logo:
   same-page: false
-  render: cc-by-2-logo
+  render: cc-logo
+  render-args:
+    license-link: https://creativecommons.org/licenses/by/2.0/
+    license-text: CC BY 2.0
+cc-by-3-logo:
+  same-page: false
+  render: cc-logo
+  render-args:
+    license-link: https://creativecommons.org/licenses/by/3.0/
+    license-text: CC BY 3.0
+cc-by-4-logo:
+  same-page: false
+  render: cc-logo
+  render-args:
+    license-link: https://creativecommons.org/licenses/by/4.0/
+    license-text: CC BY 4.0
+generic:
+  same-page: false
+  render: generic
 icons8:
   same-page: true
   render: icons8

@@ -1,0 +1,3 @@
+{% for tech in include.techs %}<p>
+  <a href="{{tech.url}}">"{{tech.alt}} logo"</a> by <a href="{{tech.link}}">{{tech.author}}</a> is licensed under <a href="{{include.args.license-link}}">{{include.args.license-text}}</a>
+</p>{% endfor %}

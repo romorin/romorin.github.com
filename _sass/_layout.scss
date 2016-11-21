@@ -1,0 +1,62 @@
+$spacing-unit: 70px !default;
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin: $spacing-unit 0 $spacing-unit 0;
+
+  small {
+    text-align: center;
+    display: block;
+    margin: 20px;
+  }
+}
+
+.content {
+  width: 1000px;
+  padding: 0;
+  margin: $spacing-unit auto 0 auto;
+}
+
+.content-text {
+  @extend .content;
+  text-align: justify;
+}
+
+.content-line {
+  @extend .content;
+  text-align: center;
+}
+
+.content-row {
+  @extend .content;
+  @extend .container-fluid;
+
+  > * {
+    @extend .col-xs-12, .col-sm-6, .col-md-4;
+  }
+}
+
+.tech-icon {
+  font-size: 36px;
+  margin: 0 10px;
+}
+
+.screenshot {
+  @extend .img-responsive;
+
+  padding: 1px;
+  background-color: lightgrey;
+  margin: $spacing-unit auto;
+}
+
+footer {
+  background-color: lightgrey;
+  border-top: solid;
+  border-top-color: grey;
+  padding: 10px;
+}

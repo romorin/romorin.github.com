@@ -31,6 +31,9 @@ markdown: kramdown
 #theme: minima
 gems:
   - jekyll-feed
+  - jekyll-assets
+  - bootstrap-sass
+  - uglifier
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -42,3 +45,11 @@ collections:
   ? techs_cat
   ? techs
   ? credits
+
+
+assets:
+  sources:
+    - _assets/javascripts
+    - _assets/stylesheets
+    - assets/javascripts
+    - assets/stylesheets

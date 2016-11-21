@@ -1,6 +1,47 @@
 /**
  * Site header
  */
+.header-content {
+  display: flex;
+  max-width: $content-width;
+  margin: 0 auto;
+
+  :last-child {
+    flex-grow: 1;
+  }
+}
+
+.site-title {
+  font-size: 26px;
+}
+
+.navbar-toggle {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.site-nav {
+  ul {
+    width: 100%;
+    margin: 10px 0;
+    text-align: right;
+
+    li {
+      display: inline-block;
+      margin: 0 20px;
+
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+    }
+  }
+}
+
+
+/**
+ * Site header
+ */
 .site-header {
   border-top: 5px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;

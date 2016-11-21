@@ -23,52 +23,36 @@
   {% endfor %}
 {% endif %}
 
-<footer class="site-footer">
-
+<footer>
   <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{% if site.author %}
-            {{ site.author | escape }}
-          {% else %}
-              {{ site.title | escape }}
-          {% endif %}</li>
-          {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-          {% endif %}
-          {% if site.github %}
-            <li><a href="{{ site.github }}">{{ site.github }}</a></li>
-          {% endif %}
-          {% if site.codepen %}
-            <li><a href="{{ site.codepen }}">{{ site.codepen }}</a></li>
-          {% endif %}
-          {% if site.freeCodeCamp %}
-            <li><a href="{{ site.freeCodeCamp }}">{{ site.freeCodeCamp }}</a></li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
+    <h4 class="title">{{ site.title | escape }}
+    </h4>
+    <div class="content-row">
+      <ul class="contact-list">
+        {% if site.email %}
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        {% endif %}
+        {% if site.github %}
+          <li><a href="{{ site.github }}">{{ site.github }}</a></li>
+        {% endif %}
+      </ul><ul class="contact-list">
+        {% if site.codepen %}
+          <li><a href="{{ site.codepen }}">{{ site.codepen }}</a></li>
+        {% endif %}
+        {% if site.freeCodeCamp %}
+          <li><a href="{{ site.freeCodeCamp }}">{{ site.freeCodeCamp }}</a></li>
+        {% endif %}
+      </ul>
+      <p>{{ site.description | escape }}</p>
     </div>
-
+    <div class="content-line">{% for credit in site.data.credits %}
+      {% if credit[1].same-page == true %}
+        {% assign render = credit[1].render %}
+        {% assign args = credit[1].render-args %}
+        {% assign render-url = 'credits/' | append: {{render}} | append: '.html' %}
+        {% assign techs = used_tech | where: 'credits', credit[0] %}
+        {% include {{render-url}} techs=techs args=args %}
+      {% endif %}
+    {% endfor %}</div>
   </div>
-  {% for credit in site.data.credits %}
-    {% if credit[1].same-page == true %}
-      {% assign render = credit[1].render %}
-      {% assign args = credit[1].render-args %}
-      {% assign render-url = 'credits/' | append: {{render}} | append: '.html' %}
-      {% assign techs = used_tech | where: 'credits', credit[0] %}
-      {% include {{render-url}} techs=techs args=args %}
-    {% endif %}
-  {% endfor %}
 </footer>

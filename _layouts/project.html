@@ -3,30 +3,26 @@ layout: default
 techs: [github,codepen,web,heroku]
 ---
 
-<div class="home">
+<h1 class="title">{{ page.title }}
+  <small>
+    <p>{{ page.types | array_to_sentence_string}}</p>
+    <p>{{ page.techs | array_to_sentence_string}}</p>
+  </small>
+</h1>
 
-  <h1 class="page-heading">{{ page.title }}
-    <small>
-      {{ page.types | array_to_sentence_string}}
-    </small>
-    <small>
-      {{ page.techs | array_to_sentence_string}}
-    </small>
-  </h1>
-
+<div class="content-text">
   {{ content }}
-
-  <p>
-    {% if page.github %} {% assign key='github' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.github %} {% endif %}
-    {% if page.codepen %} {% assign key='codepen' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.codepen %} {% endif %}
-    {% if page.live %} {% assign key='web' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.live %} {% endif %}
-    {% if page.heroku %} {% assign key='heroku' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.heroku %} {% endif %}
-  </p>
-
-  {% if page.screenshots %}
-    {% for screenshot in page.screenshots %}
-      <img class="img-responsive" src="/assets/projects/{{ screenshot }}" alt="{{ page.title }} screenshot" />
-    {% endfor %}
-  {% endif %}
-
 </div>
+
+<p class="content-line">
+  {% if page.github %} {% assign key='github' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.github %} {% endif %}
+  {% if page.codepen %} {% assign key='codepen' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.codepen %} {% endif %}
+  {% if page.live %} {% assign key='web' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.live %} {% endif %}
+  {% if page.heroku %} {% assign key='heroku' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.heroku %} {% endif %}
+</p>
+
+{% if page.screenshots %}
+  {% for screenshot in page.screenshots %}
+    <img class="screenshot" src="/assets/projects/{{ screenshot }}" alt="{{ page.title }} screenshot" />
+  {% endfor %}
+{% endif %}

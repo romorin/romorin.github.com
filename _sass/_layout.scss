@@ -1,7 +1,10 @@
+/* todo separate content */
+
 $spacing-unit: 70px !default;
 
 body {
   position: relative;
+  padding-top: 140px;
 }
 
 header {
@@ -10,14 +13,21 @@ header {
   padding: 10px;
 }
 .header-nav {
-  @extend .navbar;
+  @extend .navbar, .navbar-fixed-top;
 
-  display: flex;
-  max-width: 1000px;
-  margin: 0 auto;
+  background-color: white;
+  border-bottom: solid;
+  border-bottom-color: grey;
+  padding: 10px;
 
-  :last-child {
-    flex-grow: 1;
+  > div {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    :last-child {
+      flex-grow: 1;
+    }
   }
 }
 .brand {

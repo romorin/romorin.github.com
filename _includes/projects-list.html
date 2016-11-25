@@ -1,0 +1,26 @@
+<section id="projects" class="content-row">
+  {% for project in site.projects %}
+    <figure class="content-figure">
+      <figcaption>
+        <h3>{{ project.title }}
+          <small>{{ project.types | array_to_sentence_string}}</small>
+          <small>{{ project.techs | array_to_sentence_string}}</small>
+        </h3>
+      </figcaption>
+      <figure class="content-figure-pic">
+        {% if project.screenshots and project.screenshots.size > 0 %}
+          <img src="/assets/projects/{{ project.screenshots[0] }}" alt="{{ project.title }}" />
+        {% else %}
+          <!--todo-->
+        {% endif %}
+        <div class="blurry is-hidden"></div>
+        <div class="list is-hidden">
+          {% if project.github %} {% assign key='github' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=project.github %} {% endif %}
+          {% if project.codepen %} {% assign key='codepen' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=project.codepen %} {% endif %}
+          {% if project.live %} {% assign key='web' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=project.live %} {% endif %}
+          {% if project.heroku %} {% assign key='heroku' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=project.heroku %} {% endif %}
+        </div>
+      </figure>
+    </figure>
+  {% endfor %}
+</section>

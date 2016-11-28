@@ -1,0 +1,61 @@
+.header-nav {
+  @extend .navbar, .navbar-fixed-top;
+
+  background-color: white;
+  border-bottom: solid;
+  border-bottom-color: grey;
+  padding: 10px;
+
+  > div {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    :last-child {
+      flex-grow: 1;
+    }
+  }
+}
+.brand {
+  font-size: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav-collapsed-button {
+  @extend .navbar-toggle;
+  @extend .collapse;
+  margin-left: auto;
+  margin-right: 0;
+}
+.bar {
+  @extend .icon-bar;
+}
+.nav-collapsable {
+  > ul {
+    width: 100%;
+    padding: 5px 0;
+    text-align: right;
+
+    > li {
+      display: inline-block;
+      margin: 0 20px;
+
+      > a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+    }
+  }
+}
+.drop-menu {
+  @extend .dropdown;
+
+  > button {
+    @extend .btn, .btn-default, .dropdown-toggle;
+  }
+  > ul {
+    @extend .dropdown-menu;
+  }
+}

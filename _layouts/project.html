@@ -14,7 +14,7 @@ techs: [github,codepen,web,heroku]
   {{ content }}
 </div>
 
-<p class="content-line">
+<p class="content-centered">
   {% if page.github %} {% assign key='github' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.github %} {% endif %}
   {% if page.codepen %} {% assign key='codepen' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.codepen %} {% endif %}
   {% if page.live %} {% assign key='web' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.live %} {% endif %}

@@ -10,18 +10,16 @@ function projectHoverOut(event) {
 }
 
 function removeProjectFocus(nodes) {
-	nodes.find(".blurry").addClass('is-hidden');
-	nodes.find(".list").addClass('is-hidden');
-	nodes.removeClass('hover');
+	nodes.children().addClass('is-hidden');
+	nodes.removeClass('hovering');
 }
 
 function addProjectFocus(nodes) {
-	nodes.find(".blurry").removeClass('is-hidden');
-	nodes.find(".list").removeClass('is-hidden');
-	nodes.addClass('hover');
+	nodes.children().removeClass('is-hidden');
+	nodes.addClass('hovering');
 
 	// there can only be one*
-	removeProjectFocus(jQuery('.content-figure-pic').not(nodes));
+	removeProjectFocus(jQuery('.hover-list').not(nodes));
 }
 
 // http://knackforge.com/blog/karalmax/how-deal-hover-touch-screen-devices
@@ -29,7 +27,7 @@ function onTouchStart(event) {
 	'use strict';
 
 	var link = jQuery(event.currentTarget); //preselect the link
-	if (link.hasClass('hover')) {
+	if (link.hasClass('hovering')) {
 		return true;
 	}
 	else {
@@ -41,7 +39,7 @@ function onTouchStart(event) {
 
 // to be done when the page is ready
 jQuery(function() {
-	var projects = jQuery(".content-figure-pic");
+	var projects = jQuery(".hover-list");
 	projects.hover(projectHoverIn, projectHoverOut);
 	projects.on("touchstart", onTouchStart);
 });

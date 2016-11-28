@@ -27,7 +27,7 @@
   <div class="wrapper">
     <h4 class="title">{{ site.title | escape }}
     </h4>
-    <div class="content-row">
+    <div class="content-list">
       <ul class="contact-list">
         {% if site.email %}
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
@@ -45,7 +45,7 @@
       </ul>
       <p>{{ site.description | escape }}</p>
     </div>
-    <div class="content-line">{% for credit in site.data.credits %}
+    <div class="content-centered">{% for credit in site.data.credits %}
       {% if credit[1].same-page == true %}
         {% assign render = credit[1].render %}
         {% assign args = credit[1].render-args %}

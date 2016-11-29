@@ -1,44 +1,45 @@
 <nav class="header-nav">
-  <div>
-    <!-- title -->
-    <a class="brand" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
-    <!-- button when collapsed -->
+  <div class="nav-header">
+    <!-- collapsable button -->
     <button type="button" class="nav-collapsed-button" data-toggle="collapse"
-        data-target="#navbar-links" aria-expanded="false">
+        data-target="#nav-links" aria-expanded="false">
       <span class="sr-only">Toggle navigation</span>
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
     </button>
-    <div class="nav-collapsable" id="navbar-links">
-      <!-- inner links -->
-      {% if layout.sections %}<ul role="tablist">
-        {% for section in layout.sections %}<li>
-          <a href="{{ section.href }}">{{ section.title }}</a>
-        </li>{% endfor %}
-      </ul>{% endif %}
-      <!-- outer links -->
-      <ul role="tablist">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-            <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
-          {% endif %}
-        {% endfor %}
-        {% assign outputable = site.collections | where: "output", true %}
-        {% for collection in outputable %}
-          <li class="drop-menu">
-            <button type="button" id="{{collection.label | capitalize }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-              {{collection.label | capitalize }}
-              <span class="caret"></span>
-            </button>
-            <ul aria-labelledby="{{collection.label | capitalize }}">
-              {% for item in site.[collection.label] %}
-                  <li><a href="{{item.url}}">{{item.title | capitalize}}</a></li>
-              {% endfor %}
-            </ul>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
+    <!-- title -->
+    <a class="nav-brand" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
+  </div>
+  <!-- links -->
+  <!-- todo: puting collapse via sass doesnt work -->
+  <div class="collapse nav-collapsable" id="nav-links">
+    <!-- inner links -->
+    {% if layout.sections %}<ul role="tablist">
+      {% for section in layout.sections %}<li>
+        <a href="{{ section.href }}">{{ section.title }}</a>
+      </li>{% endfor %}
+    </ul>{% endif %}
+    <!-- outer links -->
+    <ul role="tablist">
+      {% for my_page in site.pages %}
+        {% if my_page.title %}
+          <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+        {% endif %}
+      {% endfor %}
+      {% assign outputable = site.collections | where: "output", true %}
+      {% for collection in outputable %}
+        <li class="drop-menu">
+          <a href="#" id="{{collection.label | capitalize }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            {{collection.label | capitalize }} <span class="caret"></span>
+          </a>
+          <ul aria-labelledby="{{collection.label | capitalize }}">
+            {% for item in site.[collection.label] %}
+                <li><a href="{{item.url}}">{{item.title | capitalize}}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 </nav>

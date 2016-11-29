@@ -22,7 +22,7 @@ section {
 }
 
 main {
-  width: $content-width;
+  max-width: $content-width;
   margin: 0 auto;
 }
 
@@ -45,7 +45,7 @@ footer {
 }
 
 .content {
-  width: $content-width;
+  max-width: $content-width;
   padding: 0;
   margin: $spacing-unit auto 0 auto;
 }
@@ -141,9 +141,17 @@ footer {
   background-color: rgba(21,21,21,0.8);
 }
 
-.tech-icon {
-  font-size: 50px;
-  height: 50px;
+@media (max-width: $screen-xs) {
+  .tech-icon {
+    font-size: 30px;
+    height: 30px;
+  }
+}
+@media (min-width: $screen-xs) {
+  .tech-icon {
+    font-size: 50px;
+    height: 50px;
+  }
 }
 
 //project

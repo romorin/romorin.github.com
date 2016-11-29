@@ -1,59 +1,38 @@
 .header-nav {
-  @extend .navbar, .navbar-fixed-top;
-
-  background-color: white;
-  border-bottom: solid;
-  border-bottom-color: grey;
-  padding: 10px;
-
-  > div {
-    display: flex;
-    max-width: 1000px;
-    margin: 0 auto;
-
-    :last-child {
-      flex-grow: 1;
-    }
-  }
+  @extend .navbar, .navbar-default, .navbar-fixed-top, .container-fluid;
 }
-.brand {
-  font-size: 20px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.nav-header {
+  @extend .navbar-header, .col-sm-6, .col-md-4;
 }
+
+.nav-brand {
+  @extend .navbar-brand;
+}
+
 .nav-collapsed-button {
   @extend .navbar-toggle;
-  @extend .collapse;
-  margin-left: auto;
-  margin-right: 0;
 }
+
 .bar {
   @extend .icon-bar;
 }
+
 .nav-collapsable {
-  > ul {
-    width: 100%;
-    padding: 5px 0;
-    text-align: right;
+  @extend .navbar-collapse;
 
-    > li {
-      display: inline-block;
-      margin: 0 20px;
-
-      > a {
-        color: inherit;
-        text-decoration: inherit;
-      }
-    }
+  > * {
+    @extend .nav, .navbar-nav, .col-xs-12, .col-sm-6, .col-md-4;
+  }
+  > :last-child {
+    @extend .col-sm-offset-6, .col-md-offset-0;
   }
 }
+
 .drop-menu {
   @extend .dropdown;
 
-  > button {
-    @extend .btn, .btn-default, .dropdown-toggle;
+  > a {
+    @extend .dropdown-toggle;
   }
   > ul {
     @extend .dropdown-menu;

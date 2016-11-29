@@ -3,26 +3,28 @@ layout: default
 techs: [github,codepen,web,heroku]
 ---
 
-<h1 class="title">{{ page.title }}
-  <small>
-    <p>{{ page.types | array_to_sentence_string}}</p>
-    <p>{{ page.techs | array_to_sentence_string}}</p>
-  </small>
-</h1>
+<section>
+  <h1 class="title">{{ page.title }}
+    <small>
+      <p>{{ page.types | array_to_sentence_string}}</p>
+      <p>{{ page.techs | array_to_sentence_string}}</p>
+    </small>
+  </h1>
 
-<div class="content-text">
-  {{ content }}
-</div>
+  <div class="content-text">
+    {{ content }}
+  </div>
 
-<p class="content-centered">
-  {% if page.github %} {% assign key='github' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.github %} {% endif %}
-  {% if page.codepen %} {% assign key='codepen' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.codepen %} {% endif %}
-  {% if page.live %} {% assign key='web' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.live %} {% endif %}
-  {% if page.heroku %} {% assign key='heroku' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.heroku %} {% endif %}
-</p>
+  <p class="content-centered">
+    {% if page.github %} {% assign key='github' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.github %} {% endif %}
+    {% if page.codepen %} {% assign key='codepen' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.codepen %} {% endif %}
+    {% if page.live %} {% assign key='web' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.live %} {% endif %}
+    {% if page.heroku %} {% assign key='heroku' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=page.heroku %} {% endif %}
+  </p>
 
-{% if page.screenshots %}
-  {% for screenshot in page.screenshots %}
-    <img class="screenshot" src="/assets/projects/{{ screenshot }}" alt="{{ page.title }} screenshot" />
-  {% endfor %}
-{% endif %}
+  {% if page.screenshots %}
+    {% for screenshot in page.screenshots %}
+      <img class="screenshot" src="/assets/projects/{{ screenshot }}" alt="{{ page.title }} screenshot" />
+    {% endfor %}
+  {% endif %}
+</section>

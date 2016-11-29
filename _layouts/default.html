@@ -8,15 +8,11 @@ js: [bootstrap.js]
   {% include head.html %}
 
   <body data-spy="scroll" data-target="#navbar-links">
-
-    {% include header.html %}
-
+    {% include nav.html %}
     <main aria-label="Content">
       {{ content }}
     </main>
-
     {% include footer.html %}
-
   </body>
   {% javascript application.js %}
 </html>

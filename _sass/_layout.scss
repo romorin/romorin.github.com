@@ -19,6 +19,9 @@ main section {
   max-width: $content-width;
   margin: 50px auto;
 }
+section:first-child {
+  margin-top: 100px;
+}
 
 footer {
   margin-top: 50px;

@@ -4,10 +4,12 @@ title: Credits
 permalink: /credits/
 ---
 
-{% for credit in site.data.credits %}
-  {% assign render = credit[1].render %}
-  {% assign args = credit[1].render-args %}
-  {% assign render-url = 'credits/' | append: {{render}} | append: '.html' %}
-  {% assign techs = site.data.techs | where: 'credits', credit[0] %}
-  {% include {{render-url}} techs=techs args=args %}
-{% endfor %}
+<section>
+  {% for credit in site.data.credits %}
+    {% assign render = credit[1].render %}
+    {% assign args = credit[1].render-args %}
+    {% assign render-url = 'credits/' | append: {{render}} | append: '.html' %}
+    {% assign techs = site.data.techs | where: 'credits', credit[0] %}
+    {% include {{render-url}} techs=techs args=args %}
+  {% endfor %}
+</section>

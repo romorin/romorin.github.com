@@ -1,5 +1,5 @@
 .header-nav {
-  @extend .navbar, .navbar-default, .navbar-fixed-top, .container-fluid;
+  @extend .navbar, .navbar-default, .container-fluid;
 }
 .nav-header {
   @extend .navbar-header, .col-sm-6, .col-md-4;

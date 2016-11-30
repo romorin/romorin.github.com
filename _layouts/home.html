@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: hero
+hero: "/assets/keyboard-hero.jpg"
 sections:
-  - href: "#home"
-    title: Home
   - href: "#projects"
     title: Projects
   - href: "#techs"
@@ -11,11 +10,7 @@ techs_cat: [web,programming,os,other]
 techs: [github,codepen,web,heroku]
 ---
 
-<header class="hero" id="home">
-  <h1>{{ site.title | escape }}</h1>
-</header>
-
 {% include projects-list.html %}
-{% javascript projects-list.js %}
+{% javascript hovering-text.js %}
 {% include techs-list.html %}
 {{ content }}

@@ -16,6 +16,7 @@
   <div class="collapse nav-collapsable" id="nav-links">
     <!-- inner links -->
     {% if layout.sections %}<ul role="tablist">
+      <li><a href="#top">Home</a></li>
       {% for section in layout.sections %}<li>
         <a href="{{ section.href }}">{{ section.title }}</a>
       </li>{% endfor %}

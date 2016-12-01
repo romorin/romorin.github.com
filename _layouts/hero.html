@@ -13,7 +13,12 @@ sections:
   <body data-spy="scroll" data-target="#navbar-links">
     <header class="hero" id="home" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
   		url( '{{ layout.hero }}' );">
-      <h1>{{ site.title | escape }}</h1>
+      <h1 class="title">
+        {{ site.title | escape }}
+        <small>Previously graduated in computer engineering with high marks.</small>
+        <small>Back on the coding scene and learning fast.</small>
+        <small>Evidence below <span class="fa fa-arrow-down" title="down-arrow"></span></small>
+      </h1>
     </header>
     {% include nav.html %}
     <main aria-label="Content">

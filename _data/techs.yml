@@ -1,6 +1,3 @@
-# todo: some logos have a license preventing color change, so making them the same color
-# will not work...
-
 ######################
 # Web
 ######################
@@ -182,10 +179,17 @@ windows:
 # Programs
 ######################
 
-
 firefox:
   credits: icons8
   class: icon icons8-Firefox
   base64: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAADUUlEQVRoge1agXXbIBC9ETwCI3SDaoN6g7JBvIHYoN4g2sDewNog3sDaIN6g5dsQIwTSCZDs1/a/919iB93dF8dxQiH6j38P3zR/ataapwBrwx+amyfFOAkE9675qfl7Jj80f2mKtYP2gbuLO32hYZBnzaOmCnCv2WpeA9cd6H5zVgdSyhcCAZLmpRHSs6GhMKSmKBUsmcBCEMaZdYy7rCh/LWyMHX/W6gK2qTLGfEP43l0j+xLOPMDekfqi4LPOMWpnQDrfScdBR3dxPgTdF3dDaemC9LMVMLQuL2bMLAjq5zEgne9aGs4KrjnQoxikzppNu46GYtzZknOMSs/Au/N7Exhf0SMNr1QuBXcUroKWmCnB8bePGEDQJyd4+9kdIwuJsdiMxHMxfz9MGWkjBjhcatevKDxbdj+rxi5uAxdyd/slgRTzRSFLjoZRtJQmyK63JRESZauhiF2UKmYtUSridxcaLBkBc9Ov1nzT/F5Y0Cbic5B2GJjSKXMoConZmjjbgI9Pf3CzkBhZSAyAqobZP0d8fXURYgEhZ0poUyYgJ3xWduCusJiWltmTqgm/0HG7iQhgrM2Yw0EuF8aYb0X3tLwpU4UE9aZ+ZUEnuk/ODR8FBe2fJMimO2vgGJGuXchoIQh6rEmWoCpDTEf9AgBbsrAgQDEF3TbYbYYg62hpoNhU3HjUDAE+4Ugsr+fmi7POMTnZ+xAcLX0Cyo1FYHCVKciKinUGEItGFQcoNaUdJHLXM5USZNMPAQtjV5jPoab3RPxZFUz/x7kXlObok6YDbtHqPRN1Kwpp6V6ItkxBsYMSn72Ub1YQcp0hAqjMzwvD9tm/WC4sBjdsTiXErCjir28ZMlKq47ZplfI2guhxc7EmTgxf0QNOlSkC1WxOSsXE2KroH9rHqGLGRKYgyzpRzFuCr8njZ1VI1IX4z0UYx0kt9tpxAbVdIVFWGDoEdAfC8WNfLB8ybA8qWww53fdavNLMQ5jmBYIeY/CkdArtCwQeIrdlGgDrKXao9yzmvCF8OVHZYlxR7d8ixgW36y3NZgkxFijp3UpCUJqTqtlcjL3MLcWWnvDPTHCoqHyXXq0lYAxIRewPKeKw4DHjYu2guUBLIqn/r2Qu3Yc3Udr5H7n6EuvQ3bOwAAAAAElFTkSuQmCC
   alt: Firefox
   link: http://127.0.0.1/
+
+######################
+# Generic
+######################
+
+info:
+  icon: fa fa-info-circle
+  alt: Info

@@ -18,6 +18,7 @@
       <!--img src="/assets/projects/{{ project.screenshots[0] }}" alt="{{ project.title }}" /-->
         <div class="blurry is-hidden"></div>
         <div class="list is-hidden">
+          {% assign tech = site.data.techs['info'] %} {% include tech-icon-link.html tech=tech link=project.url %}
           {% if project.github %} {% assign key='github' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=project.github %} {% endif %}
           {% if project.codepen %} {% assign key='codepen' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=project.codepen %} {% endif %}
           {% if project.live %} {% assign key='web' %} {% assign tech = site.data.techs[key] %} {% include tech-icon-link.html tech=tech link=project.live %} {% endif %}

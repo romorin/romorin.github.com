@@ -11,11 +11,10 @@
         </h3>
       </figcaption>
       {% if project.screenshots and project.screenshots.size > 0 %}
-      <figure class="content-figures-item hover-list" style="background-image:url('/assets/projects/{{ project.screenshots[0] }}'");>
+      <figure class="content-figures-item hover-list" style="background-image:url('/assets/projects/{{ project.screenshots[0] }}'")>
       {% else %}
-      <!--todo--><figure class="content-figures-item hover-list">
+      <figure class="content-figures-item hover-list" style="background-image:url('assets/projects/placeholder.svg'")>
       {% endif %}
-      <!--img src="/assets/projects/{{ project.screenshots[0] }}" alt="{{ project.title }}" /-->
         <div class="blurry is-hidden"></div>
         <div class="list is-hidden">
           {% assign tech = site.data.techs['info'] %} {% include tech-icon-link.html tech=tech link=project.url %}

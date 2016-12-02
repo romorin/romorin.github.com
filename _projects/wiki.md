@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Wikipedia viewer
+creation-date: 16/06/01
 types: [freeCodeCamp,frontend]
 techs: [html,css,javascript,jquery]
 screenshots: [wiki-screenshot-t.png]

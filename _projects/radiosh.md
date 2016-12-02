@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Radiosh
+creation-date: 16/05/31
 types: [general,cli]
 techs: [bash,makefile]
 screenshots: [radiosh-screenshot-t.png]

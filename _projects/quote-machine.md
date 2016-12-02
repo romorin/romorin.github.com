@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Quote Machine
+creation-date: 16/04/11
 types: [freeCodeCamp,frontend]
 techs: [html,css,javascript,jquery]
 screenshots: [quote-screenshot-t.png]

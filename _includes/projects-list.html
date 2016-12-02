@@ -2,7 +2,7 @@
 <section>
   <h2 class="title">Projects</h2>
   <div class="content-figures">
-  {% for project in site.projects %}
+  {% assign projects = site.projects| sort: 'creation-date'  | reverse %}{% for project in projects %}
     <figure>
       <figcaption>
         <h3>{{ project.title }}

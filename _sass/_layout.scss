@@ -9,10 +9,22 @@ body {
   position: relative;
 }
 
-header {
-  border-bottom: solid;
-  border-bottom-color: grey;
-  padding: 10px;
+section > header {
+  font-size: 50px;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+
+  > hr {
+  	flex:1;
+  	margin: 20px;
+
+    border-color: #212121;
+    color: #212121; /* old IE */
+    background-color: #212121; /* Modern Browsers */
+  }
 }
 
 main section {

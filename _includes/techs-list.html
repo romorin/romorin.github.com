@@ -1,6 +1,10 @@
 <a class="anchor" id="techs"></a>
 <section>
-  <h2 class="title">Techs</h2>
+  <header>
+    <hr/>
+    <span class="fa fa-cogs"></span>
+    <hr/>
+  </header>
   <div class="content-figures">
   {% for catname in layout.techs_cat %} {% for category in site.techs_cat %} {% assign down = category.title | downcase %} {% if down == catname %}
     <figure>

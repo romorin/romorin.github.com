@@ -1,6 +1,10 @@
 <a class="anchor" id="projects"></a>
 <section>
-  <h2 class="title">Projects</h2>
+  <header>
+    <hr/>
+    <span class="fa fa-code"></span>
+    <hr/>
+  </header>
   <div class="content-figures">
   {% assign projects = site.projects| sort: 'creation-date'  | reverse %}{% for project in projects %}
     <figure>

@@ -1,6 +1,6 @@
 var lists;
 // should be roughtly half of the icon width
-const FUDGE_WIDTH = 30;
+const FUDGE_WIDTH = 35;
 
 function adjustListWidth(index, element) {
   var jElement = jQuery(element);

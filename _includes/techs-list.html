@@ -13,7 +13,7 @@
           <small>{{ category.output }}</small>
         </h3>
       </figcaption>
-      <div class="content-figures-item list">
+      <div class="content-figures-item list techs-list">
         {% for name in category.techs %} {% assign tech = site.data.techs[name] %} {% include tech-icon-link.html tech=tech %} {% endfor %}
       </div>
     </figure>

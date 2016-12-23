@@ -182,6 +182,10 @@ footer {
   background-color: rgba(21,21,21,0.8);
 }
 
+.techs-list .tech-icon {
+	color: #242424;
+}
+
 @media (max-width: $screen-xs) {
   .tech-icon {
     font-size: 30px;

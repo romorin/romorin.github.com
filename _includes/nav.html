@@ -29,7 +29,7 @@
         {% endif %}
       {% endfor %}
       {% assign outputable = site.collections | where: "output", true %}
-      {% for collection in outputable %}
+      {% for collection in outputable %}{% if  site.[collection.label].size > 0 %}
         <li class="drop-menu">
           <a href="#" id="{{collection.label | capitalize }}" class="drop-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             {{collection.label | capitalize }} <span class="caret"></span>
@@ -40,7 +40,7 @@
             {% endfor %}
           </ul>
         </li>
-      {% endfor %}
+      {% endif %}{% endfor %}
     </ul>
   </div>
 </nav>

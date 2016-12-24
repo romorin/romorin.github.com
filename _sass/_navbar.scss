@@ -22,6 +22,9 @@
 
   > * {
     @extend .nav, .navbar-nav, .col-xs-12, .col-sm-6, .col-md-4;
+
+		display: flex;
+		justify-content: center;
   }
   > :last-child {
     @extend .col-sm-offset-6, .col-md-offset-0;

@@ -4,11 +4,10 @@ title: Pomodoro using Typescript
 creation-date: 16/10/22
 types: [freeCodeCamp,frontend]
 techs: [html,css,typescript]
-#todo
 screenshots: [pomodoro-screenshot.png]
-github: https://github.com/romorin/fcc-calc
-codepen: http://codepen.io/romorin/pen/bZmXpg/
-live: http://romorin.com/calc/
+github: https://github.com/romorin/pomodoro-ts
+codepen: http://codepen.io/romorin/pen/oYyXJy/
+live: http://romorin.com/pomodoro-ts/
 ---
 
 A simple pomodoro counter. It counts a certain work, then pause period. With a minimalist theme, it supports editing the length or the naming of each period, and a reset button.

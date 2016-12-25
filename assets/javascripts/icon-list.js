@@ -21,7 +21,7 @@ function adjustIconListsWidth() {
 }
 
 // to be done when the page is ready
-jQuery(function() {
+jQuery(window).on("load", function() {
   lists = jQuery(".content-figures-item.list");
   jQuery(window).on("resize", adjustIconListsWidth);
   adjustIconListsWidth();

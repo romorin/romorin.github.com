@@ -4,11 +4,9 @@ title: Pomodoro using Angular2
 creation-date: 16/08/15
 types: [freeCodeCamp,frontend]
 techs: [html,css,typescript,angular2]
-#todo
 screenshots: [pomodoro-screenshot.png]
-github: https://github.com/romorin/fcc-calc
-codepen: http://codepen.io/romorin/pen/bZmXpg/
-live: http://romorin.com/calc/
+github: https://github.com/romorin/pomodoro
+live: http://romorin.com/pomodoro/
 heroku: https://romorin-pomodoro-ng2.herokuapp.com/
 ---
 

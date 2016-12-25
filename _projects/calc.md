@@ -12,4 +12,4 @@ live: http://romorin.com/calc/
 
 An online calculator with basic operations, on/off, memory, square root and modulus support, using a picture of a real calculator for display.
 
-Had a lot of fun with this one. Calculating the offsets for the buttons was long and boring, but worth it. Also satisfied of my design of the code in js.
+Had a lot of fun with this one. Calculating the offsets for the buttons was long and boring, but worth it. Also satisfied with my design of the code in js.

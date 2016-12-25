@@ -11,4 +11,4 @@ live: http://romorin.com/quote/
 ---
 
 This challenge was to use an external api to fetch quotes and display them, and be able to to share them via twitter.
-Also my first usage of javascript in a freeCodeCamp project.
+Also, it was my first usage of javascript in a freeCodeCamp project.

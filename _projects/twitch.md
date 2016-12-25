@@ -10,5 +10,5 @@ codepen: http://codepen.io/romorin/pen/zBEqzq/
 live: http://romorin.com/twitch/
 ---
 
-Another freeCodeCamp project, to display a list of twitch streamers. Notable for experimeting with svg to create a crossair around a stream while hovering the cursor on it.
+Another freeCodeCamp project, to display a list of twitch streamers. Notable for experimenting with SVG to create a crosshair around a stream while hovering the cursor on it.
 I also tried to reuse as much as possible from the last freeCodeCamp project, the wikipedia viewer.

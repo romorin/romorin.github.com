@@ -10,5 +10,5 @@ codepen: http://codepen.io/romorin/pen/VjeYrm/
 live: http://romorin.com/wiki/
 ---
 
-Continuing through the freeCodeCamp curriculum, a wikipedia viewer where we search terms and click on a result to follow a link to the wikipedia website.
+Continuing through the freeCodeCamp curriculum, a Wikipedia viewer where we search terms and click on a result to follow a link to the Wikipedia website.
 I used a simple theme and continued my experimentations with object oriented javascript.

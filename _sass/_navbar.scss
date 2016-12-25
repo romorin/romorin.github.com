@@ -1,8 +1,8 @@
 .header-nav {
-  @extend .navbar, .navbar-default, .container-fluid;
+  @extend .container-fluid;
 }
-.nav-header {
-  @extend .navbar-header, .col-sm-6, .col-md-4;
+.navbar-header {
+  @extend .col-sm-6, .col-md-4;
 }
 
 .nav-brand {
@@ -17,27 +17,18 @@
   @extend .icon-bar;
 }
 
-.nav-collapsable {
-  @extend .navbar-collapse;
-
+.navbar-collapse {
   > * {
     @extend .nav, .navbar-nav, .col-xs-12, .col-sm-6, .col-md-4;
-
-		display: flex;
-		justify-content: center;
   }
   > :last-child {
     @extend .col-sm-offset-6, .col-md-offset-0;
   }
 }
 
-.drop-menu {
-  @extend .dropdown;
-
-  > a {
-    @extend .dropdown-toggle;
-  }
-  > ul {
-    @extend .dropdown-menu;
+@media (min-width: $screen-xs) {
+  .navbar-collapse > * {
+    display: flex;
+    justify-content: center;
   }
 }

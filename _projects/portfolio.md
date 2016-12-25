@@ -11,7 +11,7 @@ live: http://romorin.com/
 ---
 
 This page! Have to brand myself, and also a freeCodeCamp challenge.
-I like to change it often to reuse the thechnologies and practices I used in other project, while keeping similar content.
+I like to change it often to reuse the technologies and practices I used in other projects, while keeping similar content.
 I am now on the third version of it.
 First, I made a simple page using html and css. Then, I added actions using javascript/jquery to add behaviour to the navigation bar and the projects display.
-In the current version, I rewrote it using Jekyll and added subpages for each projects, like e one you are currently browsing right now.
+In the current version, I rewrote it using Jekyll and added info pages for each project, like the one you are currently browsing right now.

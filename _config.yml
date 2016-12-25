@@ -19,8 +19,7 @@ github: https://github.com/romorin
 codepen: http://codepen.io/romorin/
 freeCodeCamp: http://www.freecodecamp.com/romorin
 description: >
-  Robert Morin, programmer. See my works and skills, and learn how to see me
-  around the web.
+  Robert Morin, programmer. See my works and learn more about me.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ""

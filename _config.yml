@@ -21,7 +21,7 @@ freeCodeCamp: http://www.freecodecamp.com/romorin
 description: >
   Robert Morin, programmer. See my works and learn more about me.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://romorin.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ""
 github_username: romorin
 

@@ -27,7 +27,6 @@ github_username: romorin
 
 # Build settings
 markdown: kramdown
-#theme: minima
 gems:
   - jekyll-feed
   - jekyll-assets

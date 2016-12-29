@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Pomodoro using Typescript</title>
+  <meta name="description" content="A simple pomodoro counter. It counts a certain work, then pause period. With a minimalist theme, it supports editing the length or the naming of each period,...">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="assets/favicon/manifest.json">
+	<link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.3.0/font-mfizz.min.css">
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://romorin.com/projects/pomodoro-typescript.html">
+  <link rel="alternate" type="application/rss+xml" title="Home of Robert Morin" href="/feed.xml">
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+  
+</head>
+
+
+  <body data-spy="scroll" data-target="#nav-links">
+    <nav class="navbar navbar-default">
+  <div class="navbar-header">
+    <!-- collapsable button -->
+    <button type="button" class="nav-collapsed-button" data-toggle="collapse"
+        data-target="#nav-links" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <!-- title -->
+    <a class="nav-brand" href="/">Home of Robert Morin</a>
+  </div>
+  <!-- links -->
+  <!-- todo: puting collapse via sass doesnt work -->
+  <div class="collapse navbar-collapse" id="nav-links">
+    <!-- inner links -->
+    <ul role="tablist"></ul>
+    <!-- outer links -->
+    <ul role="tablist">
+      
+        
+          <li><a href="/credits/">Credits</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+      
+        <li class="dropdown">
+          <a href="#" id="Projects" class="dropdown-toggle"
+              data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Projects <span class="caret"></span>
+          </a>
+          <ul aria-labelledby="Projects" class="dropdown-menu">
+            
+                <li><a href="/projects/calc.html">Online calculator</a></li>
+            
+                <li><a href="/projects/pomodoro-angular.html">Pomodoro using angular2</a></li>
+            
+                <li><a href="/projects/pomodoro-typescript.html">Pomodoro using typescript</a></li>
+            
+                <li><a href="/projects/portfolio.html">Portfolio</a></li>
+            
+                <li><a href="/projects/quote-machine.html">Quote machine</a></li>
+            
+                <li><a href="/projects/radiosh.html">Radiosh</a></li>
+            
+                <li><a href="/projects/timestamp.html">Timestamp microservice</a></li>
+            
+                <li><a href="/projects/tribute.html">Tribute</a></li>
+            
+                <li><a href="/projects/twitch.html">Twitch viewer</a></li>
+            
+                <li><a href="/projects/weather.html">Weather widget</a></li>
+            
+                <li><a href="/projects/wiki.html">Wikipedia viewer</a></li>
+            
+          </ul>
+        </li>
+      
+    </ul>
+  </div>
+</nav>
+
+    <main aria-label="Content">
+      <section>
+  <h1 class="title">Pomodoro using Typescript
+    <small>
+      <p>freeCodeCamp and frontend</p>
+      <p>html, css, and typescript</p>
+    </small>
+  </h1>
+
+  <div class="content-text">
+    <p>A simple pomodoro counter. It counts a certain work, then pause period. With a minimalist theme, it supports editing the length or the naming of each period, and a reset button.</p>
+
+<p>Wanted to reuse the code of the Angular2 <a href="projects/pomdoro-angular.html">version</a> using vanilla Typescript only. What is nice is that I have been able to reuse the core code from the last project, proving it was nicely designed. Had to add manual updating of the display after each events and attaching the buttons to the controller. The only changes I had to make was relating to the construction of the app. For now, I use manual dependency injection (I have also seen it called pure DI), and a possible update left is finding the way to make the core code IOC agnostic and be able to use the one we prefer without adding annotations everywhere. Fun question, and bought a book to learn more, <a href="https://www.manning.com/books/dependency-injection-in-dot-net">Dependency Injection in .NET</a>.</p>
+
+  </div>
+
+  <p class="content-centered list">
+       
+
+  <a href="https://github.com/romorin/pomodoro-ts">
+    
+
+  <span class="tech-icon fa fa-github" title="Github"></span>
+
+
+
+  </a>
+
+ 
+       
+
+  <a href="http://codepen.io/romorin/pen/oYyXJy/">
+    
+
+  <span class="tech-icon fa fa-codepen" title="Codepen"></span>
+
+
+
+  </a>
+
+ 
+       
+
+  <a href="http://romorin.com/pomodoro-ts/">
+    
+
+  <span class="tech-icon icon fa fa-globe" title="Web"></span>
+
+
+
+  </a>
+
+ 
+    
+  </p>
+
+  
+    
+      <img class="screenshot" src="/assets/projects/pomodoro-screenshot.png" alt="Pomodoro using Typescript screenshot" />
+    
+  
+</section>
+
+    </main>
+    
+
+
+
+<footer>
+  <div class="wrapper">
+    <h4 class="title">Home of Robert Morin
+    </h4>
+    <div class="content-list">
+      <ul class="contact-list">
+        
+          <li><a href="mailto:romorin@zoho.com">romorin@zoho.com</a></li>
+        
+        
+          <li><a href="https://github.com/romorin">https://github.com/romorin</a></li>
+        
+      </ul><ul class="contact-list">
+        
+          <li><a href="http://codepen.io/romorin/">http://codepen.io/romorin/</a></li>
+        
+        
+          <li><a href="http://www.freecodecamp.com/romorin">http://www.freecodecamp.com/romorin</a></li>
+        
+      </ul>
+      <p>Robert Morin, programmer. See my works and learn more about me.
+</p>
+    </div>
+    <div class="content-centered">
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+        
+        
+        
+        
+
+
+      
+    
+      
+    </div>
+  </div>
+</footer>
+
+  </body>
+  <script type="text/javascript" src="/assets/application.js"></script>
+</html>

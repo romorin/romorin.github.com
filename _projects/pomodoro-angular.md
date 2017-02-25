@@ -6,7 +6,6 @@ types: [freeCodeCamp,frontend]
 techs: [html,css,typescript,angular2]
 screenshots: [pomodoro-screenshot.png]
 github: https://github.com/romorin/pomodoro
-live: http://romorin.com/pomodoro/
 heroku: https://romorin-pomodoro-ng2.herokuapp.com/
 ---
 

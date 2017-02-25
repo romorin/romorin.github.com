@@ -6,7 +6,6 @@ types: [freeCodeCamp,backend]
 techs: [html,javascript,nodejs,npm]
 screenshots: [timestamp-screenshot.png]
 github: https://github.com/romorin/timestamp
-live: http://romorin.com/timestamp/
 heroku: https://romorin-timestamp.herokuapp.com/
 ---
 

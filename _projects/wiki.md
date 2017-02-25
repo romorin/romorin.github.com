@@ -7,7 +7,7 @@ techs: [html,css,javascript,jquery]
 screenshots: [wiki-screenshot-t.png]
 github: https://github.com/romorin/fcc-wiki
 codepen: http://codepen.io/romorin/pen/VjeYrm/
-live: http://romorin.com/wiki/
+live: http://romorin.com/fcc-wiki/
 ---
 
 Continuing through the freeCodeCamp curriculum, a Wikipedia viewer where we search terms and click on a result to follow a link to the Wikipedia website.
